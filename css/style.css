@@ -1,0 +1,160 @@
+:root{
+    --violet:#7400b8;
+    --blue:#5390d9;
+    --darkblue:#0d47a1;
+    --lightgreen:#72efdd;
+    
+    --white:whitesmoke;
+    --deeppink:#ff1493;
+}
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url('../media/pexels-shourav-sheikh-11170284.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color:var(--deeppink);
+    min-width: 200px;
+   
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    
+}
+#logo{
+    flex:3;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+nav{
+    flex:2;
+    display: flex;
+    align-items: center;
+    margin: 1em;
+
+}
+nav a{
+    flex:1;
+    
+}
+nav a:hover{
+    color: #0d47a1;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    justify-content: center;
+    padding: 1.5em;
+
+}
+.tagline1{
+    color: red;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: magenta;
+    font-weight: bolder;
+    
+}
+.contact{
+    color: darkviolet;
+    font-weight: bolder;
+}
+.maintext div{
+    margin-top: 1em;
+}
+.maintext button{
+    margin-top: 2em;
+    width: 20vw;
+    border-radius: 20px;
+    padding: 0.5em;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+}
+.menu{
+    display: grid;
+ 
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    font-weight: bolder;
+    background: linear-gradient(to right, rgb(248, 176, 43),rgb(225, 102, 15));
+ 
+}
+#menuheading,#locheading{
+    background: linear-gradient(to right, rgb(248, 176, 43),rgb(225, 102, 15));
+    font-size: 1.7em;
+    color: blue;
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: green;
+    font-size: 1.3em;
+    
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin: 0.4em;
+    
+}
+.menu td:nth-child(1)
+{
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2)
+{
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+.locations{
+    background: linear-gradient(to right, rgb(248, 176, 43),rgb(225, 102, 15));
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.locations h2{
+    color: green;
+    margin: 0.5em;
+    
+}
+/* .locations address{
+    font-weight: bolder;
+    margin: 0.5em;
+    padding-bottom: 0.4em; */
+    
+
+.locations div{
+    flex: 1;
+    padding: 1em;
+    font-weight: bolder;
+    min-width: 200px;
+}
+footer
+{
+    background: linear-gradient(to right, rgb(220, 147, 11),rgb(225, 102, 15));
+    padding: 0.5em 1em;
+}
+header i{
+    padding: 0.2em;
+}
